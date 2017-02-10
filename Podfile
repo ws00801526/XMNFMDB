@@ -3,13 +3,13 @@ inhibit_all_warnings!
 use_frameworks!
 
 def pods
-    pod 'XMNFMDB', :podspec => 'XMNFMDB.podspec'
+    pod 'XMNFMDB', :path => './'
 end
 
-target 'XMNFMDB' do
-	pod 'YYModel'
-	pod 'FMDB'
-end
+#target 'XMNFMDB' do
+#	pod 'YYModel'
+#	pod 'FMDB'
+#end
 
 target 'XMNFMDBExample' do
     pods
