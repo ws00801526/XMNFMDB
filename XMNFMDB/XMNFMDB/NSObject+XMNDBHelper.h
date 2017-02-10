@@ -20,14 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (XMNDBHelper *)xmn_usingDBHelper;
 
-
-/**
- 全局通用的日期格式化实例
- 默认日期格式为 yyyy-MM-dd HH:mm:ss
- @return NSDateFormatter 实例
- */
-+ (NSDateFormatter *)xmn_dateFormatter;
-
 @end
 
 @interface NSObject (XMNDBManagerUpdate)

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:XMNFMDB/XMNFMDB.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:XMNFMDBExample.xcodeproj">
    </FileRef>
    <FileRef

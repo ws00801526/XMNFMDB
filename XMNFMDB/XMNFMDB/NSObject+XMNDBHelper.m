@@ -30,15 +30,6 @@ static dispatch_once_t kXMNCreateDBAsyncQueueOnceToken;
     return dbHelper;
 }
 
-+ (NSDateFormatter *)xmn_dateFormatter {
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    });
-    return dateFormatter;
-}
 @end
 
 

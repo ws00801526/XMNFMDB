@@ -16,6 +16,8 @@
 		974F6F841E0A2A7200E488D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 974F6F831E0A2A7200E488D3 /* Assets.xcassets */; };
 		974F6F871E0A2A7200E488D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 974F6F851E0A2A7200E488D3 /* LaunchScreen.storyboard */; };
 		9756714E1E4D88BB00049092 /* XMNTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D663E81E35D7CB00B6AA04 /* XMNTeacher.m */; };
+		9756715C1E4DC75E00049092 /* XMNFMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975671551E4DC75E00049092 /* XMNFMDB.framework */; };
+		9756715D1E4DC75E00049092 /* XMNFMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 975671551E4DC75E00049092 /* XMNFMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		977DDC911E262F2900A6CB7E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 977DDC901E262F2900A6CB7E /* libsqlite3.tbd */; };
 		978F31E11E319CD40004F0AE /* XMNFMDBExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 978F31E01E319CD40004F0AE /* XMNFMDBExampleTests.m */; };
 		978F31E91E31AAF10004F0AE /* XMNLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 978F31E81E31AAF10004F0AE /* XMNLogTest.m */; };
@@ -23,9 +25,17 @@
 		97D663E31E35AAFB00B6AA04 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97D663E11E35AAFA00B6AA04 /* 2.jpg */; };
 		97D663E91E35D7CB00B6AA04 /* XMNTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D663E81E35D7CB00B6AA04 /* XMNTeacher.m */; };
 		97D663EB1E35DE7700B6AA04 /* XMNDBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D663EA1E35DE7700B6AA04 /* XMNDBTest.m */; };
+		9F9A2FC16FD3417061F412CC /* Pods_XMNFMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FF68892AA198EF0E674777 /* Pods_XMNFMDB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9756715A1E4DC75E00049092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 974F6F6C1E0A2A7200E488D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 975671541E4DC75E00049092;
+			remoteInfo = XMNFMDB;
+		};
 		978F31E31E319CD40004F0AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 974F6F6C1E0A2A7200E488D3 /* Project object */;
@@ -35,8 +45,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		975671611E4DC75E00049092 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9756715D1E4DC75E00049092 /* XMNFMDB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		28FF68892AA198EF0E674777 /* Pods_XMNFMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMNFMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA8BD84A1DFE00EA8D89A71 /* Pods-XMNFMDBExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDBExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDBExample/Pods-XMNFMDBExample.release.xcconfig"; sourceTree = "<group>"; };
+		8CDF2D245A250D50E204B0E5 /* Pods-XMNFMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB/Pods-XMNFMDB.debug.xcconfig"; sourceTree = "<group>"; };
+		90591241D3A6ED87F8E92625 /* Pods-XMNFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB/Pods-XMNFMDB.release.xcconfig"; sourceTree = "<group>"; };
 		97273E811E344C5C005A873F /* Snip20161009_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20161009_5.png; sourceTree = "<group>"; };
 		974F6F741E0A2A7200E488D3 /* XMNFMDBExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMNFMDBExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		974F6F781E0A2A7200E488D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,6 +75,7 @@
 		974F6F831E0A2A7200E488D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		974F6F861E0A2A7200E488D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		974F6F881E0A2A7200E488D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975671551E4DC75E00049092 /* XMNFMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMNFMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977DDC901E262F2900A6CB7E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		978F31DE1E319CD40004F0AE /* XMNFMDBExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMNFMDBExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		978F31E01E319CD40004F0AE /* XMNFMDBExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMNFMDBExampleTests.m; sourceTree = "<group>"; };
@@ -68,7 +96,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				977DDC911E262F2900A6CB7E /* libsqlite3.tbd in Frameworks */,
+				9756715C1E4DC75E00049092 /* XMNFMDB.framework in Frameworks */,
 				58BA6B96D34FA583B79872D0 /* Pods_XMNFMDBExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975671511E4DC75E00049092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9A2FC16FD3417061F412CC /* Pods_XMNFMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +124,8 @@
 			children = (
 				B56114A9FBC591037B0AE80A /* Pods-XMNFMDBExample.debug.xcconfig */,
 				5BA8BD84A1DFE00EA8D89A71 /* Pods-XMNFMDBExample.release.xcconfig */,
+				8CDF2D245A250D50E204B0E5 /* Pods-XMNFMDB.debug.xcconfig */,
+				90591241D3A6ED87F8E92625 /* Pods-XMNFMDB.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -107,6 +146,7 @@
 			children = (
 				974F6F741E0A2A7200E488D3 /* XMNFMDBExample.app */,
 				978F31DE1E319CD40004F0AE /* XMNFMDBExampleTests.xctest */,
+				975671551E4DC75E00049092 /* XMNFMDB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +183,7 @@
 			children = (
 				977DDC901E262F2900A6CB7E /* libsqlite3.tbd */,
 				D733B34AE4E31469A2D3B3AB /* Pods_XMNFMDBExample.framework */,
+				28FF68892AA198EF0E674777 /* Pods_XMNFMDB.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +203,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		975671521E4DC75E00049092 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		974F6F731E0A2A7200E488D3 /* XMNFMDBExample */ = {
 			isa = PBXNativeTarget;
@@ -173,15 +224,37 @@
 				974F6F721E0A2A7200E488D3 /* Resources */,
 				30C1E6D24E146D26EFD10C79 /* [CP] Embed Pods Frameworks */,
 				72A2ECB4774964316CD668DC /* [CP] Copy Pods Resources */,
+				975671611E4DC75E00049092 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9756715B1E4DC75E00049092 /* PBXTargetDependency */,
 			);
 			name = XMNFMDBExample;
 			productName = XMNFMDBExample;
 			productReference = 974F6F741E0A2A7200E488D3 /* XMNFMDBExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		975671541E4DC75E00049092 /* XMNFMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975671601E4DC75E00049092 /* Build configuration list for PBXNativeTarget "XMNFMDB" */;
+			buildPhases = (
+				D555D151075377A80EA08A01 /* [CP] Check Pods Manifest.lock */,
+				975671501E4DC75E00049092 /* Sources */,
+				975671511E4DC75E00049092 /* Frameworks */,
+				975671521E4DC75E00049092 /* Headers */,
+				975671531E4DC75E00049092 /* Resources */,
+				32E08E5D29048F18C87F335E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMNFMDB;
+			productName = XMNFMDB;
+			productReference = 975671551E4DC75E00049092 /* XMNFMDB.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		978F31DD1E319CD40004F0AE /* XMNFMDBExampleTests */ = {
 			isa = PBXNativeTarget;
@@ -215,6 +288,11 @@
 						DevelopmentTeam = N9G92VG962;
 						ProvisioningStyle = Automatic;
 					};
+					975671541E4DC75E00049092 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N9G92VG962;
+						ProvisioningStyle = Automatic;
+					};
 					978F31DD1E319CD40004F0AE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = N9G92VG962;
@@ -238,6 +316,7 @@
 			targets = (
 				974F6F731E0A2A7200E488D3 /* XMNFMDBExample */,
 				978F31DD1E319CD40004F0AE /* XMNFMDBExampleTests */,
+				975671541E4DC75E00049092 /* XMNFMDB */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +332,13 @@
 				97D663E21E35AAFB00B6AA04 /* 1.jpg in Resources */,
 				97D663E31E35AAFB00B6AA04 /* 2.jpg in Resources */,
 				974F6F821E0A2A7200E488D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975671531E4DC75E00049092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +382,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDBExample/Pods-XMNFMDBExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		32E08E5D29048F18C87F335E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB/Pods-XMNFMDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		72A2ECB4774964316CD668DC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,6 +412,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDBExample/Pods-XMNFMDBExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D555D151075377A80EA08A01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -322,6 +438,13 @@
 				974F6F7C1E0A2A7200E488D3 /* AppDelegate.m in Sources */,
 				9756714E1E4D88BB00049092 /* XMNTeacher.m in Sources */,
 				974F6F791E0A2A7200E488D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975671501E4DC75E00049092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +462,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9756715B1E4DC75E00049092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 975671541E4DC75E00049092 /* XMNFMDB */;
+			targetProxy = 9756715A1E4DC75E00049092 /* PBXContainerItemProxy */;
+		};
 		978F31E41E319CD40004F0AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 974F6F731E0A2A7200E488D3 /* XMNFMDBExample */;
@@ -484,6 +612,54 @@
 			};
 			name = Release;
 		};
+		9756715E1E4DC75E00049092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CDF2D245A250D50E204B0E5 /* Pods-XMNFMDB.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N9G92VG962;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XMNFMDB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.XMFraker.XMNFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9756715F1E4DC75E00049092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90591241D3A6ED87F8E92625 /* Pods-XMNFMDB.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N9G92VG962;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XMNFMDB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.XMFraker.XMNFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		978F31E51E319CD40004F0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +707,15 @@
 			buildConfigurations = (
 				974F6F8C1E0A2A7200E488D3 /* Debug */,
 				974F6F8D1E0A2A7200E488D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975671601E4DC75E00049092 /* Build configuration list for PBXNativeTarget "XMNFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9756715E1E4DC75E00049092 /* Debug */,
+				9756715F1E4DC75E00049092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

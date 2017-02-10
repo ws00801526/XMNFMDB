@@ -90,11 +90,19 @@ static inline NSDictionary *XMNReformDBValueFromNSValue(NSValue *value) {
     }
 }
 
+
+static NSDateFormatter *kXMNFMDBDateFormatter;
 static inline id XMNReformDBValueFromValue(id value, BOOL shouldWrap) {
     
     if (!value) {
         return nil;
     }
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        kXMNFMDBDateFormatter = [[NSDateFormatter alloc] init];
+        kXMNFMDBDateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    });
     
     id retValue;
     if ([value isKindOfClass:[NSString class]]) {
@@ -114,7 +122,7 @@ static inline id XMNReformDBValueFromValue(id value, BOOL shouldWrap) {
         retValue = shouldWrap ? XMNDBDictionary(XMNObjectTypeNSNumber, [(NSNumber *)value stringValue], NO) : [(NSNumber *)value stringValue];
     }else if ([value isKindOfClass:[NSDate class]]) {
         
-        retValue = shouldWrap ? XMNDBDictionary(XMNObjectTypeNSDate, [[NSObject xmn_dateFormatter] stringFromDate:(NSDate *)value], YES) : [[NSObject xmn_dateFormatter] stringFromDate:(NSDate *)value];
+        retValue = shouldWrap ? XMNDBDictionary(XMNObjectTypeNSDate, [kXMNFMDBDateFormatter stringFromDate:(NSDate *)value], YES) : [kXMNFMDBDateFormatter stringFromDate:(NSDate *)value];
     }else if ([value isKindOfClass:[NSURL class]]) {
         
         retValue = shouldWrap ? XMNDBDictionary(XMNObjectTypeNSURL, [(NSURL *)value absoluteString], YES) : [(NSURL *)value absoluteString];

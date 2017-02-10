@@ -120,8 +120,14 @@ static inline NSDictionary *XMNReformDictionaryFromDBValue(id dbValue) {
     return isMutable ? retValues : [retValues copy];
 }
 
-
+static NSDateFormatter *kXMNFMDBDateFormatter;
 static inline id XMNReformValueFromDBValue(id dbValue, XMNObjectType valueType) {
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        kXMNFMDBDateFormatter = [[NSDateFormatter alloc] init];
+        kXMNFMDBDateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    });
     
     switch (valueType) {
             
@@ -154,7 +160,7 @@ static inline id XMNReformValueFromDBValue(id dbValue, XMNObjectType valueType) 
             return [[NSMutableAttributedString alloc] initWithString:dbValue];
         case XMNObjectTypeNSDate:
             
-            return nil;
+            return [kXMNFMDBDateFormatter dateFromString:dbValue];
             //数据结构相关
             
         case XMNObjectStructCGRect:

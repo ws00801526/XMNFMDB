@@ -64,7 +64,6 @@ void XMNLogSetLoggerLevel(XMNLogLevel logLevel);
 void XMNLogSetLoggerBlock(XMNLogBlock _Nonnull block);
 
 void XMNLogMessagev(XMNLogLevel logLevel,  NSString * _Nonnull format, va_list args);
-
 void XMNLogMessage(XMNLogLevel logLevel, NSString * _Nonnull format, ...);
 
 /**
