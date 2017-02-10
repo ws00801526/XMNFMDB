@@ -425,7 +425,7 @@
         XMNLogInfo(@"cls table name is created : %@ \n will fix it",[cls xmn_tableName]);
         
         /** 备份之前数据 */
-        NSString *backupTableName = [NSString stringWithFormat:@"%@_backup_%ld",[cls xmn_tableName],(NSInteger)[[NSDate date] timeIntervalSince1970]];
+        NSString *backupTableName = [NSString stringWithFormat:@"%@_backup_%ld",[cls xmn_tableName],(long)[[NSDate date] timeIntervalSince1970]];
         NSString *backupTableSQL = [NSString stringWithFormat:@"alter table %@ rename to %@",[cls xmn_tableName],backupTableName];
         [self executeUpdateSQL:backupTableSQL withArguments:nil];
         

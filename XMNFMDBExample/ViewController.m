@@ -8,11 +8,9 @@
 
 #import "ViewController.h"
 
-#import "NSObject+XMNUtils.h"
-#import "NSObject+XMNDBModel.h"
-#import "NSObject+XMNDBHelper.h"
-
 #import "XMNTeacher.h"
+
+#import <XMNFMDB/XMNFMDB.h>
 
 @interface ViewController ()
 
@@ -55,7 +53,6 @@
     [result stringByAppendingFormat:@"\nQuery Objects End"];
     self.resultTextView.text = result;
 }
-
 
 - (IBAction)insertHugeAction:(UIButton *)sender {
     

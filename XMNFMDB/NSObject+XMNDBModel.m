@@ -201,7 +201,7 @@ static inline XMNObjectType  XMNObjectClassTypeForCls(Class cls) {
     NSString *where;
     if (self.rowID && self.rowID != NSIntegerMax){
         
-        where = [NSString stringWithFormat:@"rowid = %ld",self.rowID];
+        where = [NSString stringWithFormat:@"rowid = %ld", (long)self.rowID];
     }else if ([self.class xmn_primaryKeys] && [self.class xmn_primaryKeys].count) {
         
         NSArray *primaryKeys = [[self.class xmn_primaryKeys] allObjects];
@@ -283,7 +283,7 @@ static inline XMNObjectType  XMNObjectClassTypeForCls(Class cls) {
         NSMutableString *propertySQL = [NSMutableString string];
         [propertySQL appendFormat:@"%@ %@",columnName, info.columnTypeString];
         if (info.columnType ==  XMNDBColumnText && info.columnLength) {
-            [propertySQL appendFormat:@"(%ld)",info.columnLength];
+            [propertySQL appendFormat:@"(%ld)", (long)info.columnLength];
         }
         
         if (info.isNotNull) {
