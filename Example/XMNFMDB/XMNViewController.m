@@ -8,6 +8,10 @@
 
 #import "XMNViewController.h"
 
+//#import <XMNFMDB/XMNFMDB.h>
+
+#import "XMNDBHelper.h"
+
 @interface XMNViewController ()
 
 @end

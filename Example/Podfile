@@ -6,6 +6,5 @@ target 'XMNFMDB_Example' do
   target 'XMNFMDB_Tests' do
     inherit! :search_paths
 
-    
   end
 end
