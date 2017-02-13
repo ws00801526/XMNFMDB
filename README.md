@@ -1,9 +1,9 @@
 # XMNFMDB
 
 [![CI Status](http://img.shields.io/travis/ws00801526/XMNFMDB.svg?style=flat)](https://travis-ci.org/ws00801526/XMNFMDB)
-[![Version](https://img.shields.io/cocoapods/v/XMNFMDB.svg?style=flat)](http://cocoapods.org/pods/XMNFMDB)
-[![License](https://img.shields.io/cocoapods/l/XMNFMDB.svg?style=flat)](http://cocoapods.org/pods/XMNFMDB)
-[![Platform](https://img.shields.io/cocoapods/p/XMNFMDB.svg?style=flat)](http://cocoapods.org/pods/XMNFMDB)
+[![0.0.1](https://img.shields.io/cocoapods/v/XMNFMDB.svg?style=flat)](http://cocoapods.org/pods/XMNFMDB)
+[![MIT](https://img.shields.io/cocoapods/l/XMNFMDB.svg?style=flat)](http://cocoapods.org/pods/XMNFMDB)
+[![iOS](https://img.shields.io/cocoapods/p/XMNFMDB.svg?style=flat)](http://cocoapods.org/pods/XMNFMDB)
 
 ## Example
 

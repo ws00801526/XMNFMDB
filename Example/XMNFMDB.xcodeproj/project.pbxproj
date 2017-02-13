@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C45BA425BAE8DAFFCD5A9FB /* Pods_XMNFMDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946BEA56635061947488B20B /* Pods_XMNFMDB_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +21,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		830A84B94ACDCCD14DCA17FC /* Pods_XMNFMDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946BEA56635061947488B20B /* Pods_XMNFMDB_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		978535411E515DA400F0BE60 /* XMNInsertDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 978535401E515DA400F0BE60 /* XMNInsertDBTests.m */; };
+		978535431E51818000F0BE60 /* XMNTestLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 978535421E51818000F0BE60 /* XMNTestLogger.m */; };
 		E909445C2029E92A83F9DE06 /* Pods_XMNFMDB_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F680441E9044D51C34FE16 /* Pods_XMNFMDB_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FAA3C392CEB0EBA98EE305E /* Pods-XMNFMDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		36D37F05C2B0520BB34E1107 /* Pods-XMNFMDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		50CEFEDB234792402E49E216 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		51149ECA1CA28589343BE9A3 /* Pods-XMNFMDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XMNFMDB_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMNFMDB_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,8 +62,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87879F11DDCBF026B837D069 /* Pods-XMNFMDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9314A2EB07E5DA10E49AFA6A /* XMNFMDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XMNFMDB.podspec; path = ../XMNFMDB.podspec; sourceTree = "<group>"; };
 		946BEA56635061947488B20B /* Pods_XMNFMDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMNFMDB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		978535401E515DA400F0BE60 /* XMNInsertDBTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNInsertDBTests.m; sourceTree = "<group>"; };
+		978535421E51818000F0BE60 /* XMNTestLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNTestLogger.m; sourceTree = "<group>"; };
 		D7FF9219AFB3343327AEC2C6 /* Pods-XMNFMDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB_Example/Pods-XMNFMDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D9E35C336F9EE52B952CA4BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ED54C668CECA217C65458F9C /* Pods-XMNFMDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMNFMDB_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMNFMDB_Example/Pods-XMNFMDB_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +92,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				4C45BA425BAE8DAFFCD5A9FB /* Pods_XMNFMDB_Tests.framework in Frameworks */,
+				830A84B94ACDCCD14DCA17FC /* Pods_XMNFMDB_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				978535421E51818000F0BE60 /* XMNTestLogger.m */,
+				978535401E515DA400F0BE60 /* XMNInsertDBTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -190,8 +196,8 @@
 			children = (
 				D7FF9219AFB3343327AEC2C6 /* Pods-XMNFMDB_Example.debug.xcconfig */,
 				ED54C668CECA217C65458F9C /* Pods-XMNFMDB_Example.release.xcconfig */,
-				51149ECA1CA28589343BE9A3 /* Pods-XMNFMDB_Tests.debug.xcconfig */,
-				3FAA3C392CEB0EBA98EE305E /* Pods-XMNFMDB_Tests.release.xcconfig */,
+				36D37F05C2B0520BB34E1107 /* Pods-XMNFMDB_Tests.debug.xcconfig */,
+				87879F11DDCBF026B837D069 /* Pods-XMNFMDB_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -223,12 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "XMNFMDB_Tests" */;
 			buildPhases = (
-				2B8861C3073C94A221CF8C90 /* [CP] Check Pods Manifest.lock */,
+				E4DD22276FA233544B0B80D9 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				71986CDAB5FD1F332A06B9C9 /* [CP] Embed Pods Frameworks */,
-				9D42278948B7A070AAAD9C45 /* [CP] Copy Pods Resources */,
+				86BF6300E6B4516C1DC87385 /* [CP] Embed Pods Frameworks */,
+				31A4CE6FDD8AF2FDD47B9DE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,19 +303,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B8861C3073C94A221CF8C90 /* [CP] Check Pods Manifest.lock */ = {
+		31A4CE6FDD8AF2FDD47B9DE3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		397264A71AFE1DEBC1B5AEE8 /* [CP] Embed Pods Frameworks */ = {
@@ -327,21 +333,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB_Example/Pods-XMNFMDB_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71986CDAB5FD1F332A06B9C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7FF50E1223E136E9A7EB0959 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,19 +348,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB_Example/Pods-XMNFMDB_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D42278948B7A070AAAD9C45 /* [CP] Copy Pods Resources */ = {
+		86BF6300E6B4516C1DC87385 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMNFMDB_Tests/Pods-XMNFMDB_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4DD22276FA233544B0B80D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F4EDAFE67813BED6B0FF9B0E /* [CP] Check Pods Manifest.lock */ = {
@@ -404,6 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978535411E515DA400F0BE60 /* XMNInsertDBTests.m in Sources */,
+				978535431E51818000F0BE60 /* XMNTestLogger.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +559,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51149ECA1CA28589343BE9A3 /* Pods-XMNFMDB_Tests.debug.xcconfig */;
+			baseConfigurationReference = 36D37F05C2B0520BB34E1107 /* Pods-XMNFMDB_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -575,7 +583,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FAA3C392CEB0EBA98EE305E /* Pods-XMNFMDB_Tests.release.xcconfig */;
+			baseConfigurationReference = 87879F11DDCBF026B837D069 /* Pods-XMNFMDB_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -26,7 +26,6 @@
 
 XMNLogLevel XMNCurrentLogLevel = XMNLogLevelInfo;
 
-
 /** 设置测试环境下打印日志信息 */
 XMNLogBlock XMNCurrnetLogBlock = ^(NSUInteger logLevel, NSString *fileName, NSUInteger lineNumber, NSString *methodName, NSString *format, ...) {
     
@@ -53,27 +52,39 @@ void XMNLogSetLoggerLevel(XMNLogLevel logLevel)
 void XMNLogMessagev(XMNLogLevel logLevel, NSString *format, va_list args)
 {
     
+    NSString *facility = [[NSBundle mainBundle] bundleIdentifier];
+    // convert to via NSString, since printf does not know %@
+    NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
+    va_end(args);
 #ifdef XMNLOG_USE_NEW_OS_METHODS
     
     /** ios10+ */
-
+    os_log_t log = os_log_create([facility UTF8String], [facility UTF8String]);
+    switch (logLevel) {
+        case XMNLogLevelInfo:
+            os_log_info(log, [message UTF8String], nil);
+            break;
+        case XMNLogLevelWarning:
+        case XMNLogLevelError:
+            os_log_error(log, [message UTF8String], nil);
+            break;
+        case XMNLogLevelCritical:
+        case XMNLogLevelEmergency:
+            os_log_fault(log, [message UTF8String], nil);
+            break;
+        case XMNLogLevelDebug:
+        default:
+            os_log_debug(log, [message UTF8String], nil);
+            break;
+    }
+    os_log_with_type(log, OS_LOG_TYPE_INFO, [message UTF8String], nil);
 #else
 
-    NSString *facility = [[NSBundle mainBundle] bundleIdentifier];
     aslclient client = asl_open(NULL, [facility UTF8String], ASL_OPT_STDERR); // also log to stderr
-    
     aslmsg msg = asl_new(ASL_TYPE_MSG);
     asl_set(msg, ASL_KEY_READ_UID, "-1");  // without this the message cannot be found by asl_search
-    
-    // convert to via NSString, since printf does not know %@
-    NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
-    
     asl_log(client, msg, logLevel, "%s", [message UTF8String]);
-    
     asl_free(msg);
-    
-    va_end(args);
-    
 #endif
 
 }
@@ -102,6 +113,7 @@ NSArray *XMNLogGetMessages(void) {
     const char *key, *val;
     NSString *facility = [[NSBundle mainBundle] bundleIdentifier];
     query = asl_new(ASL_TYPE_QUERY);
+
     // search only for current app messages
     asl_set_query(query, ASL_KEY_FACILITY, [facility UTF8String], ASL_QUERY_OP_EQUAL);
     aslresponse response = asl_search(NULL, query);

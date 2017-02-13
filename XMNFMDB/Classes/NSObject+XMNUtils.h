@@ -70,7 +70,7 @@ void XMNLogMessage(XMNLogLevel logLevel, NSString * _Nonnull format, ...);
  Retrieves the log messages currently available for the running app
  @returns an `NSArray` of `NSDictionary` entries
  */
-NSArray * _Nullable XMNLogGetMessages(void);
+NSArray<NSDictionary *> * _Nullable XMNLogGetMessages(void);
 
 /**
  @name Macros
@@ -165,7 +165,6 @@ if (XMNCurrnetLogBlock && XMNCurrentLogLevel>=logLevel) XMNCurrnetLogBlock(logLe
  @return 文件路径
  */
 + (nullable NSString *)xmn_filePathForDocuments:(nonnull NSString *)filename;
-
 
 /**
  获取document目录下某个文件目录下的文件路径

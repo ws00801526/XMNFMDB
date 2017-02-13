@@ -10,7 +10,7 @@
 
 //#import <XMNFMDB/XMNFMDB.h>
 
-#import "XMNDBHelper.h"
+#import "NSObject+XMNUtils.h"
 
 @interface XMNViewController ()
 
@@ -22,6 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning

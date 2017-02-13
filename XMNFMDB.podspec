@@ -19,8 +19,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'XMNFMDB/Classes/**/*'
   
-  s.frameworks = 'Foundation', 'CoreFoundation'
+  s.frameworks = 'Foundation'
   s.dependency 'YYModel' 
   s.dependency 'FMDB'
+#s.dependency 'CocoaLumberjack'
   s.libraries = 'sqlite3'
 end
